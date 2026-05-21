@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply antialiased text-slate-800;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* Prevents iOS zoom when focusing inputs */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+
+  @media (min-width: 640px) {
+    input,
+    textarea,
+    select {
+      font-size: inherit;
+    }
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/60 bg-white/80 shadow-card backdrop-blur-md;
+  }
+
+  .medical-card {
+    @apply overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-card;
+  }
+
+  .btn-medical-primary {
+    @apply inline-flex min-h-[48px] touch-manipulation items-center justify-center gap-2 rounded-xl bg-medical-600 font-semibold text-white shadow-medical transition hover:bg-medical-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-medical-200 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none disabled:active:scale-100;
+  }
+
+  .safe-bottom {
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+
+  .safe-top {
+    padding-top: max(0.5rem, env(safe-area-inset-top));
+  }
+
+  .mobile-page {
+    @apply min-h-screen min-h-[100dvh];
+  }
+
+  .mobile-sticky-action {
+    @apply fixed bottom-0 left-0 right-0 z-30 border-t border-slate-200/90 bg-white/95 px-4 py-3 shadow-[0_-8px_24px_rgba(15,23,42,0.08)] backdrop-blur-lg safe-bottom;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-sticky-action {
+      @apply static border-0 bg-transparent p-0 shadow-none backdrop-blur-none;
+    }
+  }
+}
+
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

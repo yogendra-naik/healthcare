@@ -1,0 +1,912 @@
+
+Port 5173 is in use, trying another one...
+
+  VITE v6.4.2  ready in 474 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+1:43:48 AM [vite] http proxy error: /api/triag
+1:43:48 AM [vite] http proxy error: /api/triage/history
+Error: connect ECONNREFUSED ::1:8080
+    at TCPConnectWrap.afterConnect [as oncompl
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+1:43:48 AM [vite] http proxy error: /api/triag
+1:43:48 AM [vite] http proxy error: /api/triage/history
+Error: connect ECONNREFUSED ::1:8080
+    at TCPConnectWrap.afterConnect [as oncompl
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) (x2)
+1:44:07 AM [vite] http proxy error: /api/patie
+1:44:07 AM [vite] http proxy error: /api/patients/register
+Error: connect ECONNREFUSED ::1:8080
+    at TCPConnectWrap.afterConnect [as oncompl
+    at TCPConnectWrap.afterConnect [as oncomplete] (node555:16)
+1:46:24 AM [vite] (client) hmr update /src/com
+1:46:24 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css
+1:53:05 AM [vite] vite.config.js changed, rest
+1:53:05 AM [vite] vite.config.js changed, restarting server...
+failed to load config from /Users/gaju/Desktop
+failed to load config from /Users/gaju/Desktop/healthCare/client/vite.config.js
+1:53:05 AM [vite] Cannot find package 'vite-pl
+1:53:05 AM [vite] Cannot find package 'vite-plugin-pwa' imported from /Users/gaju/Desktop/he
+1:53:05 AM [vite] Cannot find package 'vite-plugin-pwa' imported from /Users/gaju/Desktop/healthCare/client/node_modules/.vite-temp/vite.c
+1:53:05 AM [vite] Cannot find package 'vite-plugin-pwa' imported from /Users/gaju/Desktop/healthCare/client/node_modules/.vite-temp/vite.config.js.timestamp-1779308585966-435f7cd0ecced
+1:53:05 AM [vite] Cannot find package 'vite-plugin-pwa' imported from /Users/gaju/Desktop/healthCare/client/node_modules/.vite-temp/vite.config.js.timestamp-1779308585966-435f7cd0ecced.mjs
+1:53:05 AM [vite] server restart failed
+1:53:07 AM [vite] (client) page reload index.h
+1:53:07 AM [vite] (client) page reload index.html
+1:53:11 AM [vite] (client) hmr update /src/ind
+1:53:11 AM [vite] (client) hmr update /src/index.css
+1:53:21 AM [vite] (client) hmr update /src/com
+1:53:21 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css
+1:53:21 AM [vite] Internal server error: /User
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/component
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Identifier 'PATIENTS_API'
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Identifier 'PATIENTS_API' has already been declared. (41:6)
+
+  39 |   import.meta.env.VITE_API_BASE || "/ap
+  39 |   import.meta.env.VITE_API_BASE || "/api/triage";
+  40 |
+> 41 | const PATIENTS_API =
+     |       ^
+  42 |   import.meta.env.VITE_API_BASE?.replac
+  42 |   import.meta.env.VITE_API_BASE?.replace(/\/triage\/?$/, "") || "/api";
+  43 |
+  44 | async function registerVisitor({ name, 
+  44 | async function registerVisitor({ name, age, contactNumber }) {
+  Plugin: vite:react-babel
+  File: /Users/gaju/Desktop/healthCare/client/
+  File: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx:41:6
+  39 |    import.meta.env.VITE_API_BASE || "/a
+  39 |    import.meta.env.VITE_API_BASE || "/api/triage";
+  40 |  
+  41 |  const PATIENTS_API =
+     |        ^
+  42 |    import.meta.env.VITE_API_BASE?.repla
+  42 |    import.meta.env.VITE_API_BASE?.replace(/\/triage\/?$/, "") || "/api";
+  43 |  
+      at constructor (/Users/gaju/Desktop/heal
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/i
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/gaju/Des
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at ScopeHandler.checkRedeclarationInScop
+      at ScopeHandler.checkRedeclarationInScope (/Users/gaju/Desktop/healthCare/client/node_
+      at ScopeHandler.checkRedeclarationInScope (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:1619:19)
+      at ScopeHandler.declareName (/Users/gaju
+      at ScopeHandler.declareName (/Users/gaju/Desktop/healthCare/client/node_modules/@babel
+      at ScopeHandler.declareName (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:1585:12)
+      at JSXParserMixin.declareNameFromIdentif
+      at JSXParserMixin.declareNameFromIdentifier (/Users/gaju/Desktop/healthCare/client/nod
+      at JSXParserMixin.declareNameFromIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7584:16)
+      at JSXParserMixin.checkIdentifier (/User
+      at JSXParserMixin.checkIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.checkIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7580:12)
+      at JSXParserMixin.checkLVal (/Users/gaju
+      at JSXParserMixin.checkLVal (/Users/gaju/Desktop/healthCare/client/node_modules/@babel
+      at JSXParserMixin.checkLVal (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7517:12)
+      at JSXParserMixin.parseVarId (/Users/gaj
+      at JSXParserMixin.parseVarId (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.parseVarId (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13429:10)
+      at JSXParserMixin.parseVar (/Users/gaju/
+      at JSXParserMixin.parseVar (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/
+      at JSXParserMixin.parseVar (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13400:12)
+      at JSXParserMixin.parseVarStatement (/Us
+      at JSXParserMixin.parseVarStatement (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.parseVarStatement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13247:10)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12868:23)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (/User
+      at JSXParserMixin.parseModuleItem (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseModuleItem (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBloc
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/n
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:3
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (/Users
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at JSXParserMixin.parseProgram (/Users/g
+      at JSXParserMixin.parseProgram (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseProgram (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (/Users/
+      at JSXParserMixin.parseTopLevel (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseTopLevel (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12629:25)
+      at JSXParserMixin.parse (/Users/gaju/Des
+      at JSXParserMixin.parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:14505:25)
+      at parse (/Users/gaju/Desktop/healthCare
+      at parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.j
+      at parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:14539:38)
+      at parser (/Users/gaju/Desktop/healthCar
+      at parser (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/parser/i
+      at parser (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/gaju/Desktop/he
+      at normalizeFile (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/t
+      at normalizeFile (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/gaju/Desktop/healthCare/c
+      at run (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformat
+      at run (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/gaju/Desktop/health
+      at transform (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/trans
+      at transform (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/gaju/Desktop/healthCare/
+      at step (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:261:32)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/gaj
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensy
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:223:11)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:189:28
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/gensync-utils/as
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:113:33
+      at step (/Users/gaju/Desktop/healthCare/
+      at step (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:287:14)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/gaj
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensy
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:223:11)
+1:53:21 AM [vite] Internal server error: /User
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/component
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Identifier 'PATIENTS_API'
+1:53:21 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Identifier 'PATIENTS_API' has already been declared. (41:6)
+
+  39 |   import.meta.env.VITE_API_BASE || "/ap
+  39 |   import.meta.env.VITE_API_BASE || "/api/triage";
+  40 |
+> 41 | const PATIENTS_API =
+     |       ^
+  42 |   import.meta.env.VITE_API_BASE?.replac
+  42 |   import.meta.env.VITE_API_BASE?.replace(/\/triage\/?$/, "") || "/api";
+  43 |
+  44 | async function registerVisitor({ name, 
+  44 | async function registerVisitor({ name, age, contactNumber }) {
+  Plugin: vite:react-babel
+  File: /Users/gaju/Desktop/healthCare/client/
+  File: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx:41:6
+  39 |    import.meta.env.VITE_API_BASE || "/a
+  39 |    import.meta.env.VITE_API_BASE || "/api/triage";
+  40 |  
+  41 |  const PATIENTS_API =
+     |        ^
+  42 |    import.meta.env.VITE_API_BASE?.repla
+  42 |    import.meta.env.VITE_API_BASE?.replace(/\/triage\/?$/, "") || "/api";
+  43 |  
+      at constructor (/Users/gaju/Desktop/heal
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/i
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/gaju/Des
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at ScopeHandler.checkRedeclarationInScop
+      at ScopeHandler.checkRedeclarationInScope (/Users/gaju/Desktop/healthCare/client/node_
+      at ScopeHandler.checkRedeclarationInScope (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:1619:19)
+      at ScopeHandler.declareName (/Users/gaju
+      at ScopeHandler.declareName (/Users/gaju/Desktop/healthCare/client/node_modules/@babel
+      at ScopeHandler.declareName (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:1585:12)
+      at JSXParserMixin.declareNameFromIdentif
+      at JSXParserMixin.declareNameFromIdentifier (/Users/gaju/Desktop/healthCare/client/nod
+      at JSXParserMixin.declareNameFromIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7584:16)
+      at JSXParserMixin.checkIdentifier (/User
+      at JSXParserMixin.checkIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.checkIdentifier (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7580:12)
+      at JSXParserMixin.checkLVal (/Users/gaju
+      at JSXParserMixin.checkLVal (/Users/gaju/Desktop/healthCare/client/node_modules/@babel
+      at JSXParserMixin.checkLVal (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:7517:12)
+      at JSXParserMixin.parseVarId (/Users/gaj
+      at JSXParserMixin.parseVarId (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.parseVarId (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13429:10)
+      at JSXParserMixin.parseVar (/Users/gaju/
+      at JSXParserMixin.parseVar (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/
+      at JSXParserMixin.parseVar (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13400:12)
+      at JSXParserMixin.parseVarStatement (/Us
+      at JSXParserMixin.parseVarStatement (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.parseVarStatement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13247:10)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12868:23)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at JSXParserMixin.parseModuleItem (/User
+      at JSXParserMixin.parseModuleItem (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseModuleItem (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12761:17)
+      at JSXParserMixin.parseBlockOrModuleBloc
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/n
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:3
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:36)
+      at JSXParserMixin.parseBlockBody (/Users
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at JSXParserMixin.parseProgram (/Users/g
+      at JSXParserMixin.parseProgram (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseProgram (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12639:10)
+      at JSXParserMixin.parseTopLevel (/Users/
+      at JSXParserMixin.parseTopLevel (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseTopLevel (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12629:25)
+      at JSXParserMixin.parse (/Users/gaju/Des
+      at JSXParserMixin.parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:14505:25)
+      at parse (/Users/gaju/Desktop/healthCare
+      at parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.j
+      at parse (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:14539:38)
+      at parser (/Users/gaju/Desktop/healthCar
+      at parser (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/parser/i
+      at parser (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/gaju/Desktop/he
+      at normalizeFile (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/t
+      at normalizeFile (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/gaju/Desktop/healthCare/c
+      at run (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformat
+      at run (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/Users/gaju/Desktop/health
+      at transform (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/trans
+      at transform (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/gaju/Desktop/healthCare/
+      at step (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:261:32)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/gaj
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensy
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:223:11)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:189:28
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/gensync-utils/as
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:113:33
+      at step (/Users/gaju/Desktop/healthCare/
+      at step (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:287:14)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/gaj
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensy
+      at async.call.result.err.err (/Users/gaju/Desktop/healthCare/client/node_modules/gensync/index.js:223:11) (x2)
+1:53:22 AM [vite] (client) hmr update /src/com
+1:53:22 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css
+1:53:24 AM [vite] (client) hmr update /src/com
+1:53:24 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x2)
+1:53:24 AM [vite] (client) hmr update /src/com
+1:53:24 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x3)
+1:53:25 AM [vite] (client) hmr update /src/com
+1:53:25 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x4)
+1:53:26 AM [vite] (client) hmr update /src/com
+1:53:26 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x5)
+1:53:26 AM [vite] (client) hmr update /src/com
+1:53:26 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x6)
+1:53:27 AM [vite] (client) hmr update /src/com
+1:53:27 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x7)
+1:53:27 AM [vite] (client) hmr update /src/com
+1:53:27 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x8)
+1:53:29 AM [vite] (client) hmr update /src/com
+1:53:29 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x9)
+1:53:31 AM [vite] (client) hmr update /src/com
+1:53:31 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x10
+1:53:31 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x10)
+1:53:33 AM [vite] (client) hmr update /src/com
+1:53:33 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x11
+1:53:33 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x11)
+1:53:38 AM [vite] (client) hmr update /src/com
+1:53:38 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x12
+1:53:38 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x12)
+1:53:39 AM [vite] (client) hmr update /src/com
+1:53:39 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x13
+1:53:39 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x13)
+1:53:39 AM [vite] (client) hmr update /src/com
+1:53:39 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x14
+1:53:39 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x14)
+1:53:41 AM [vite] (client) hmr update /src/com
+1:53:41 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x15
+1:53:41 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x15)
+1:53:43 AM [vite] (client) hmr update /src/com
+1:53:43 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x16
+1:53:43 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x16)
+1:53:44 AM [vite] (client) hmr update /src/com
+1:53:44 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x17
+1:53:44 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x17)
+1:53:44 AM [vite] (client) hmr update /src/com
+1:53:44 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x18
+1:53:44 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x18)
+1:53:46 AM [vite] (client) hmr update /src/com
+1:53:46 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x19
+1:53:46 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x19)
+1:53:48 AM [vite] (client) hmr update /src/com
+1:53:48 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x20
+1:53:48 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x20)
+1:53:48 AM [vite] Internal server error: /User
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/component
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JS
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JSX closing tag for <div>. (1256:10)
+
+  1254 |             </div>
+  1255 |             </div>
+> 1256 |           </section>
+       |           ^
+  1257 |
+  1258 |           {/* Right —esults */}
+  1259 |           <section
+  Plugin: vite:react-babel
+  File: /Users/gaju/Desktop/healthCare/client/
+  File: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx:1256:10
+  1254|              </div>
+  1255|              </div>
+  1256|            </section>
+     |            ^
+  1257|  
+  1258|            {/* Right — Results */}
+      at constructor (/Users/gaju/Desktop/heal
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/i
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/gaju/Des
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/clnt/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/User
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.j
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistingui
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12438:16)
+      at JSXParserMixin.parseExpression (/User
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_mod
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13159:28)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_m
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBloc
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/n
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:6
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (/Users
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at JSXParserMixin.parseBlock (/Users/gaj
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (/Us
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFi
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/no
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbi
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12420:14)
+      at JSXParserMixin.parseFunction (/Users/
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13461:10)
+      at JSXParserMixin.parseExportDefaultExpr
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:19)
+      at JSXParserMixin.parseExport (/Users/ga
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13845:25)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12895:27)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+1:53:48 AM [vite] Internal server error: /User
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/component
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JS
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JSX closing tag for <div>. (1256:10)
+
+  1254 |             </div>
+  1255 |             </div>
+> 1256 |           </section>
+       |           ^
+  1257 |
+  1258 |           {/* Right — Results */}
+ 259 |           <section
+  Plugin: vite:react-babel
+  File: /Users/gaju/Desktop/healthCare/client/
+  File: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx:1256:10
+  1254|              </div>
+  1255|              </div>
+  1256|            </section>
+     |            ^
+  1257|  
+  1258|            {/* Right — Results */}
+      at constructor (/Users/gaju/Desktop/heal
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/i
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/gaju/Des
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxPseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/User
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.j
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistingui
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12438:16)
+      at JSXParserMixin.parseExpression (/User
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_mod
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13159:28)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_m
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBloc
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/n
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:6
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (/Users
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at JSXParserMixin.parseBlock (/Users/gaj
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (/Us
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFi
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/no
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbi
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12420:14)
+      at JSXParserMixin.parseFunction (/Users/
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13461:10)
+      at JSXParserMixin.parseExportDefaultExpr
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:19)
+      at JSXParserMixin.parseExport (/Users/ga
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13845:25)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12895:27)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17) (x2)
+1:53:48 AM [vite] Internal server error: /User
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/component
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JS
+1:53:48 AM [vite] Internal server error: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx: Expected corresponding JSX closing tag for <div>. (1256:10)
+
+  1254 |             </div>
+  1255 |             </div>
+> 1256 |           </section>
+       |           ^
+  1257 |
+  1258 |           {/* Right — Results */}
+  1259 |           <section
+  Plugin: vite:react-babel
+  File: /Users/gaju/Desktop/healthCare/client/
+  File: /Users/gaju/Desktop/healthCare/client/src/components/MedRouteKiosk.jsx:1256:10
+  1254|              </div>
+  1255|              </div>
+  1256|            </section>
+     |            ^
+  1257|  
+  1258|            {/* Right — Results */}
+      at constructor (/Users/gaju/Desktop/heal
+      at constructor (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/i
+      at constructor (/Users/gaju/Desktop/healthCare/cliende_modules/@babel/parser/lib/index.js:365:19)
+      at JSXParserMixin.raise (/Users/gaju/Des
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/par
+      at JSXParserMixin.raise (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4739:16)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElementAt (/Us
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.jsxParseElementAt (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4710:32)
+      at JSXParserMixin.jsxParseElement (/User
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.jsxParseElement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4761:17)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4771:19)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12443:12)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_
+      at JSXParserMixin.parseMaybeAssignAllowIn (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10817:17)
+      at JSXParserMixin.parseMaybeAssignAllowI
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.j
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12510:17)
+      at JSXParserMixin.parseParenAndDistingui
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.parseParenAndDistinguishExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11692:28)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11348:23)
+      at JSXParserMixin.parseExprAtom (/Users/
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseExprAtom (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:4776:20)
+      at JSXParserMixin.parseExprSubscripts (/
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExprSubscripts (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at JSXParserMixin.parseUpdate (/Users/ga
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseUpdate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at JSXParserMixin.parseMaybeUnary (/User
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseMaybeUnary (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at JSXParserMixin.parseMaybeUnaryOrPriva
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at JSXParserMixin.parseExprOps (/Users/g
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@ba
+      at JSXParserMixin.parseExprOps (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at JSXParserMixin.parseMaybeConditional 
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseMaybeConditional (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at JSXParserMixin.parseMaybeAssign (/Use
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules
+      at JSXParserMixin.parseMaybeAssign (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at JSXParserMixin.parseExpressionBase (/
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modu
+      at JSXParserMixin.parseExpressionBase (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:39
+      at JSXParserMixin.allowInAnd (/Users/gaj
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.allowInAnd (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12438:16)
+      at JSXParserMixin.parseExpression (/User
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/
+      at JSXParserMixin.parseExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:10797:17)
+      at JSXParserMixin.parseReturnStatement (
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_mod
+      at JSXParserMixin.parseReturnStatement (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13159:28)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12815:21)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at JSXParserMixin.parseStatementListItem
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_m
+      at JSXParserMixin.parseStatementListItem (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12764:17)
+      at JSXParserMixin.parseBlockOrModuleBloc
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/n
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:6
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13333:61)
+      at JSXParserMixin.parseBlockBody (/Users
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@
+      at JSXParserMixin.parseBlockBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at JSXParserMixin.parseBlock (/Users/gaj
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babe
+      at JSXParserMixin.parseBlock (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13314:10)
+      at JSXParserMixin.parseFunctionBody (/Us
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_module
+      at JSXParserMixin.parseFunctionBody (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12117:24)
+      at JSXParserMixin.parseFunctionBodyAndFi
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/no
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10
+      at JSXParserMixin.parseFunctionBodyAndFinish (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12103:10)
+      at /Users/gaju/Desktop/healthCare/client
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462
+      at /Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13462:12
+      at JSXParserMixin.withSmartMixTopicForbi
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/c
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12420:14)
+      at JSXParserMixin.parseFunction (/Users/
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@b
+      at JSXParserMixin.parseFunction (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13461:10)
+      at JSXParserMixin.parseExportDefaultExpr
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:
+      at JSXParserMixin.parseExportDefaultExpression (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13924:19)
+      at JSXParserMixin.parseExport (/Users/ga
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@bab
+      at JSXParserMixin.parseExport (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:13845:25)
+      at JSXParserMixin.parseStatementContent 
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_mo
+      at JSXParserMixin.parseStatementContent (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12895:27)
+      at JSXParserMixin.parseStatementLike (/U
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modul
+      at JSXParserMixin.parseStatementLike (/Users/gaju/Desktop/healthCare/client/node_modules/@babel/parser/lib/index.js:12784:17) (x3)
+1:53:49 AM [vite] (client) hmr update /src/com
+1:53:49 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css
+1:53:49 AM [vite] (client) hmr update /src/com
+1:53:49 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x2)
+1:53:50 AM [vite] (client) hmr update /src/com
+1:53:50 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x3)
+1:53:51 AM [vite] (client) hmr update /src/com
+1:53:51 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x4)
+1:53:52 AM [vite] (client) hmr update /src/com
+1:53:52 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x5)
+1:53:55 AM [vite] (client) hmr update /src/com
+1:53:55 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x6)
+1:53:55 AM [vite] (client) hmr update /src/com
+1:53:55 AM [vite] (client) hmr update /src/components/MedRouteKiosk.jsx, /src/index.css (x7)
+2:01:46 AM [vite] vite.config.js changed, rest
+2:01:46 AM [vite] vite.config.js changed, restarting server...
+failed to load config from /Users/gaju/Desktop
+failed to load config from /Users/gaju/Desktop/healthCare/client/vite.config.js
+2:01:46 AM [vite] Named export 'VitePWA' not f
+2:01:46 AM [vite] Named export 'VitePWA' not found. The requested module 'file:///Users/gaju
+2:01:46 AM [vite] Named export 'VitePWA' not found. The requested module 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-p
+2:01:46 AM [vite] Named export 'VitePWA' not found. The requested module 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-plugin-pwa/dist/index.js' is a CommonJS module,
+2:01:46 AM [vite] Named export 'VitePWA' not found. The requested module 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-plugin-pwa/dist/index.js' is a CommonJS module, which may not support all module.exports as n
+2:01:46 AM [vite] Named export 'VitePWA' not found. The requested module 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-plugin-pwa/dist/index.js' is a CommonJS module, which may not support all module.exports as named exports.
+CommonJS modules can always be imported via th
+CommonJS modules can always be imported via the default export, for example using:
+
+import pkg from 'file:///Users/gaju/Desktop/he
+import pkg from 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-plugin-pwa/d
+import pkg from 'file:///Users/gaju/Desktop/healthCare/client/node_modules/vite-plugin-pwa/dist/index.js';
+const { VitePWA } = pkg;
+
+2:01:46 AM [vite] server restart failed
+2:01:53 AM [vite] vite.config.js changed, rest
+2:01:53 AM [vite] vite.config.js changed, restarting server...
+2:01:53 AM [vite] (client) Re-optimizing depen
+2:01:53 AM [vite] (client) Re-optimizing dependencies because lockfile has changed
+2:01:53 AM [vite] server restarted.
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://192.168.0.103:5174/
+2:01:54 AM [vite] (client) page reload index.h
+2:01:54 AM [vite] (client) page reload index.html
+2:02:26 AM [vite] (client) page reload android
+2:02:26 AM [vite] (client) page reload android/app/src/main/assets/public/index.html
+2:02:28 AM [vite] (client) page reload android
+2:02:28 AM [vite] (client) page reload android/app/src/main/assets/public/index.html (x2)

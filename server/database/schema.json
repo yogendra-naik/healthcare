@@ -1,0 +1,24 @@
+{
+  "collections": {
+    "patients": {
+      "fields": {
+        "name": "string (required)",
+        "age": "number 1-150 (required)",
+        "contactNumber": "string (required)",
+        "createdAt": "date (auto)"
+      }
+    },
+    "triage_records": {
+      "fields": {
+        "patientId": "ObjectId ref patients (optional)",
+        "symptoms": "string (required)",
+        "likelyConcern": "string (required)",
+        "department": "string (required)",
+        "urgencyLevel": "Routine | Urgent | Emergency",
+        "explanation": "string (required)",
+        "redAlert": "boolean (required)",
+        "createdAt": "date (auto)"
+      }
+    }
+  }
+}
