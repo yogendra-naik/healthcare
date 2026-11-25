@@ -15,9 +15,27 @@ const corsOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173")
   .map((origin) => origin.trim())
   .filter(Boolean);
 
+const allowVercelPreviews = process.env.ALLOW_VERCEL_PREVIEWS === "true";
+
+function isAllowedOrigin(origin) {
+  if (!origin) return true;
+  if (corsOrigins.includes(origin)) return true;
+  if (allowVercelPreviews && /^https:\/\/[\w.-]+\.vercel\.app$/.test(origin)) {
+    return true;
+  }
+  return false;
+}
+
 app.use(
   cors({
-    origin: corsOrigins,
+    origin(origin, callback) {
+      if (isAllowedOrigin(origin)) {
+        callback(null, true);
+      } else {
+        console.warn("CORS blocked origin:", origin);
+        callback(null, false);
+      }
+    },
     methods: ["GET", "POST", "PUT", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -54,8 +72,8 @@ app.use((err, req, res, _next) => {
 
 async function start() {
   await connectDatabase();
-  app.listen(port, () => {
-    console.log(`MedRoute API listening on http://localhost:${port}`);
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`MedRoute API listening on port ${port}`);
   });
 }
 

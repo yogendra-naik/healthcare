@@ -1,0 +1,12 @@
+# Optional: deploy from Render Dashboard → Blueprint, or configure manually (see DEPLOY.md)
+services:
+  - type: web
+    name: medroute-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

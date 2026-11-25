@@ -40,6 +40,7 @@ See [GOOGLE_SETUP.md](./GOOGLE_SETUP.md) and [AUTH.md](./AUTH.md).
 
 ## Docs
 
+- [DEPLOY.md](./DEPLOY.md) — **host on Render (API) + Vercel (web)**
 - [AUTH.md](./AUTH.md) — authentication flow
 - [GOOGLE_SETUP.md](./GOOGLE_SETUP.md) — Google Cloud Console setup
 - [MOBILE.md](./MOBILE.md) — phone / PWA / Capacitor
